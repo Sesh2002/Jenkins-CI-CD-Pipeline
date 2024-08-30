@@ -64,7 +64,6 @@ pipeline {
             mail to: 'developer@example.com',
                  subject: "Pipeline ${currentBuild.fullDisplayName}",
                  body: "Pipeline ${currentBuild.fullDisplayName} finished with status ${currentBuild.currentResult}.",
-                 attachmentsPattern: '**/*.log' // Optional: Attach log files if you want
         }
     }
 }
